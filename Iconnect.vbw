@@ -1,0 +1,7 @@
+frmIConnect = 40, 40, 889, 698, Z, 20, 20, 700, 528, C
+IsNetConneted = 180, 180, 941, 690, 
+ChRes = 0, 0, 0, 0, C
+RegistryRead = 106, -4, 786, 504, 
+IniRead = 180, 180, 860, 688, 
+SerialCom = 60, 60, 740, 568, 
+Winfuncs = 178, 80, 858, 588, 
