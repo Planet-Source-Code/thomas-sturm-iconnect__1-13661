@@ -1,0 +1,334 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<p><font face="Arial, Helvetica, sans-serif" size="+2"><b>Contents</b></font></p>
+<p><b><font face="Arial, Helvetica, sans-serif"><a href="#introduction">Introduction</a></font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif"><a href="#quickstart">Quickstart</a></font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif"><a href="#options">Options</a></font></b></p>
+<p><font face="Arial, Helvetica, sans-serif" size="+2" color="#000000"><b><a name="Introduction"></a></b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="+2" color="#000000"><b>Introduction</b></font> 
+</p>
+<p><font face="Arial, Helvetica, sans-serif">so, what is it good for, then? well, 
+  Iconnect is a so-called IP-publisher. It publishes your current IP by uploading 
+  it on an ftp-server. Hmm, you don&acute;t seem too impressed. How about &quot;it 
+  enables you to access your computer anywhere, anytime, even though you&acute;re 
+  only using a slow dial-up connection&quot;. Sounds better?</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="+1">hardware requirements</font></p>
+<p><font face="Arial, Helvetica, sans-serif">All you need is a computer that supports 
+  &quot;wake up on modem call&quot; via BIOS - or rather &quot;Advanced Power 
+  Management&quot; (APM). This should be the case for any vaguely modern computer: 
+  1998 and up will do. If you&acute;re not sure, check it out: while your computer 
+  is booting, it shows the following message:</font></p>
+<p><font face="Courier New, Courier, mono">Press &lt;del&gt; to enter SETUP</font></p>
+<p><font face="Arial, Helvetica, sans-serif">(or something similar). Go ahead, 
+  press &quot;del&quot; and see what happens. You should be confronted with a 
+  jungle of options...don&acute;t panic! although, at this point, I somehow feel 
+  compelled to utter the usual sermon: &quot;<i>this software is published without 
+  any warranty whatsoever...</i>&quot; I don&acute;t. We&acute;re adults, aren&acute;t 
+  we? the actual names of these options might vary from one BIOS to the other, 
+  but the one we&acute;re keen on should be found among something like</font></p>
+<p><font face="Courier New, Courier, mono">Power Management Setup</font></p>
+<p><font face="Arial, Helvetica, sans-serif">(Award-BIOS). Once you got there, 
+  you should find an option called</font></p>
+<p><font face="Courier New, Courier, mono">PWR up on Modem Act</font></p>
+<p><font face="Arial, Helvetica, sans-serif">after marvelling at the capitalization 
+  there, use the &quot;page up&quot; and &quot;page down&quot; keys to change 
+  it to &quot;enabled&quot; - if that&acute;s not already the case. Follow the 
+  instructions of your BIOS manufacturer to save the changes and reboot. If you 
+  didn&acute;t change anything else, you&acute;ll be back in windows a minute 
+  later. Turn your modem off and shutdown your system. When your computer is off, 
+  simply switch your modem ON again. Your system should now boot up, too. If that&acute;s 
+  not the case but your computer supports APM, it would be time to consult your 
+  mainboards manual: might be a jumper to be set but I can&acute;t help you there.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="+1">software requirements</font></p>
+<p><font face="Arial, Helvetica, sans-serif">You&acute;re still reading? well, 
+  this means nothing less than you being able to boot your computer from anywhere 
+  by just calling your own phone number. Now, at <a href="http://www.tridiavnc.com">http://www.tridiavnc.com</a> 
+  (or <a href="http://www.uk.research.att.com/vnc/">http://www.uk.research.att.com/vnc/</a>, 
+  for that matter) you will find a free (open source!) exiting tool, which lets 
+  you remotely access your computer via any JAVA-capable browser. You simply get 
+  to work with your desktop through someone elses browser. Without having to install 
+  anything on the remote computer (and even if the remote computer is running 
+  Linux/Unix or whatever). Get it and install it, is what I would suggest.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="+1">...and what do I need your 
+  program for?</font></p>
+<p><font face="Arial, Helvetica, sans-serif">Now the only thing that&acute;s missing 
+  is a link: you can remotely boot your computer, but...it doesn&acute;t go online 
+  by itself, does it? and if so, you still don&acute;t know it&acute;s IP-adress. 
+  And even if you did, what happened if you were on the other end of the world 
+  but for some reason couldn&acute;t connect your computer (and therefore couldn&acute;t 
+  disconnect it from the internet, let alone shut it down again). And then, like 
+  every screen-oriented remote admin tool, VNC works most efficient with low resolution 
+  and 8 or 16 Bit colour depth - but that&acute;s not a good enough reason to 
+  <i>always</i> only use 800 * 600 pixels, 16 Bit? well, <i>now</i> we&acute;re 
+  talking. I hope you will like this.</font></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="+2"><a name="quickstart"></a></font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="+2">Quickstart</font></b></p>
+<p><font face="Arial, Helvetica, sans-serif">Unzip and run. If your modem is OFF, 
+  absolutely nothing will happen. This is a feature :-)</font><br>
+  <font face="Arial, Helvetica, sans-serif">If your modem is ON, however, you 
+  might see the following:</font></p>
+<p><img src="Iconnect.gif" width="303" height="136"></p>
+<p><font face="Arial, Helvetica, sans-serif">don&acute;t worry about the language 
+  for now. We&acute;ll be able to fix that. If the countdown ticks off and nothing 
+  happens, open your Internet Explorer, go to &quot;Extra&quot; (MSIE 5.x) or 
+  &quot;View&quot; (MSIE 4.x), select &quot;internet options&quot; and click on 
+  the connection-tab. You should see a list of your dial up connections. Select 
+  one (preferably a reliable one) and make it your <i>default connection</i>. 
+  <b>Iconnect will always work with your default connection unless you&acute;re 
+  using a dialer program.</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif">If you&acute;re launching the program 
+  now, it should wait for the countdown to finish and launch your dial up connection 
+  dialog. It will then connect you to your ISP (the one appearing underneath the 
+  screen resolution: Microsoft Network (MSN) in this case) and post your current 
+  IP adress via ftp to:</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>ftp://members.nbci.com/myaccount</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif">For rather obvious reasons, this 
+  is the first thing you will want to change before really using the program. 
+  You will also notice that the countdown has changed. It&acute;s ticking down 
+  5 minutes now. The line underneath the screen resolution displays your current 
+  IP-adress on the internet. If you now click on <a href="%3Cfont%20face=%22Arial,%20Helvetica,%20sans-serif%22%3Ehttp://members.nbci.com/defaultaccount/index2.htm%3C/font%3E">http://members.nbci.com/myaccount/index2.htm</a> 
+  you should see this:</font></p>
+<p><img src="html01.gif" width="304" height="81"></p>
+<p><font face="Arial, Helvetica, sans-serif">appearing in your browser window. 
+  Obviously, local date and time will be <i>your</i> local date and time, as well 
+  as the link appearing after &quot;current ip:&quot; will match the IP-adress 
+  displayed in Iconnect. This is the &quot;page&quot; just posted by Iconnect. 
+  Since anyone on the internet can see this, it would be a good idea to make a 
+  few changes...</font></p>
+<p><b><font face="Arial, Helvetica, sans-serif">Note: </font></b><font face="Arial, Helvetica, sans-serif">I 
+  am not trying to advert <a href="http://www.nbci.com">NBCI</a> here: this is 
+  merely an example to show how Iconnect can be used. However, since you can get 
+  free webspace with ftp-account at NBCI (within a few minutes), it might be worth 
+  checking out. </font></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="+2"><a name="options"></a></font></b></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="+2">Options</font></b></p>
+<p><font face="Arial, Helvetica, sans-serif">All options in Iconnect can be easily 
+  set by double-clicking on the file <b>Iconnect.ini </b>in your Iconnect-folder. 
+  Clicking on the left button</font></p>
+<p><img src="leftbutton.gif" width="72" height="48"></p>
+<p><font face="Arial, Helvetica, sans-serif">is supposed to have the same effect: 
+  it will open Notepad with the file <b>Iconnet.ini</b>:</font></p>
+<p>
+<pre>
+[UserPrefs]
+language=deutsch
+ExitClose=Opera,winvnc,Outlook
+AutoShutdown=0
+Optimize=0
+UseNetlaunch=0
+Netlaunch=C:\Programme\NetLaunch
+Server=D:\Internet\Vnc\WinVNC.exe
+LocalPort=5800
+ScreenRes=
+
+[Connection]
+ISP=
+FTPHostname=ftp.xoom.com
+FTPUsername=homihot
+FTPPassword=open
+FTPTimeout=0:2:0
+RemoteFile=index2.htm
+MaxRetries=5
+
+[Timer]
+Interval=300
+Timer1=0:0:5
+Timer2=0:5:0
+Timer3=0:10:0
+<font face="Arial, Helvetica, sans-serif"><b><font size="+1"><a name="UserPrefs"></a></font></b></font>
+</pre>
+<p></p>
+
+
+<p><font face="Arial, Helvetica, sans-serif"><b><font size="+1">[UserPrefs]</font></b></font></p>
+<p><font face="Arial, Helvetica, sans-serif">This section, who would have thought 
+  it, describes how you want to customize Iconnect to your needs:</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><br>
+  <b>language=deutsch</b> : this should be obvious. Set it to language=english 
+  to &quot;anglisize&quot; the little app. In order to &quot;translate&quot; Iconnect 
+  into whatever language you like, have a look at the language.ini file: it has 
+  two sections right now. Add &quot;your&quot; language as a section and translate 
+  the few words you find there. Now you can add &quot;your&quot; language into 
+  Iconnect.ini. If no language is specified here, Iconnect will speak english. 
+  The &quot;help&quot;-button in Iconnect will currently only work with the &quot;build-in&quot; 
+  languages. In order to make it work with &quot;your&quot; language as well, 
+  you&acute;d have to translate this document into &quot;your language&quot; and 
+  save it to the /Docs-directory. If you completely customized Iconnect to a lnguage 
+  other than english or german, please let me know!</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>ExitClose=program1,program2,...</b> 
+  : some programs really frown upon the request to close. In case you want to 
+  automatically run one of those everytime you connect to the internet, it would 
+  be a pity if it displayed a dialog daying &quot;Are you really, really sure 
+  you want to close this wonderful program?&quot; (&quot;No&quot;, &quot;Cancel&quot;) 
+  - and no one would be there to marvel at it. Since this would stop your computer 
+  from shutting down, you can tell Iconnect to close these programs <i>before</i> 
+  shutting down your computer. Note that the name of the program(s) as they appear 
+  in their main window don&acute;t have to be fully known; Iconnect will close 
+  all windows where these names can be found. The entries of the list are separated 
+  by a &quot;,&quot;.</font></p>
+<p><b><font face="Arial, Helvetica, sans-serif">AutoShutdown=0</font></b><font face="Arial, Helvetica, sans-serif"> 
+  or <b>1</b> :if &quot;0&quot;, Iconnect will quit leaving your computer ON. 
+  If &quot;1&quot; (or, in fact anything larger than &quot;0&quot;) your computer 
+  will shutdown when the following conditions apply</font>:</p>
+<ol>
+  <li> <font face="Arial, Helvetica, sans-serif" size="-1">dial up failed: it 
+    took longer than the time specified in [Timer]Timer2 (default 5 minutes) to 
+    connect to your ISP.</font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="-1"> ftp upload failed: 
+    it took longer than the time specified in [Connection]FTPTimeout (default 
+    2 minutes) to connect your ftp-server.</font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="-1"> ftp busy: if there 
+    is only the data left to be send and the server won&acute;t respond, Iconnect 
+    will retry (MaxRetries=) times before shutdown.</font></li>
+  <li> <font face="Arial, Helvetica, sans-serif" size="-1">you couldn&acute;t 
+    connect to your computer: if the &quot;reset countdown&quot; button is not 
+    being pressed after [Timer]Timer2 (default 5 minutes).</font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="-1"> you lost an existing 
+    connection: rest countdown was pressed, but [Timer]Timer3 (default 10 minutes) 
+    expired.</font></li>
+  <li> <font face="Arial, Helvetica, sans-serif" size="-1">and finally, closing 
+    the program (or clicking on &quot;close session&quot;) <i>after</i> it went 
+    online shuts down your system, too.</font></li>
+</ol>
+<p><font face="Arial, Helvetica, sans-serif">bottom line: if you&acute;re using 
+  Iconnect to dial up your computer and connect to it, use AutoShutdown=1. If 
+  your playing around with it&acute;s settings (or it&acute;s source code :-) 
+  you might want to turn this option off.</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>Optimize<font face="Arial, Helvetica, sans-serif">=0</font></b><font face="Arial, Helvetica, sans-serif"> 
+  or <b>1</b> :if &quot;0&quot;, Iconnect will leave your windows wallpaper/desktop 
+  pattern/fontsmoothing settings alone when connecting. If &quot;1&quot; (or anything 
+  larger than &quot;0&quot;), it will turn all this off while connecting. This 
+  is useful if your remotely using your computer via <a href="http://www.tridiavnc.com">WinVNC</a> 
+  or something similar: the less data has to be transferred, the better the response 
+  of your desktop. A single color background might not have as much impact on 
+  performance than a lower <a href="#ScreenRes">screen resolution</a> but still 
+  makes a huge difference.</font></font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>UseNetlaunch<a name="Netlaunch"></a><font face="Arial, Helvetica, sans-serif">=0</font></b><font face="Arial, Helvetica, sans-serif"> 
+  or <b>1</b> :Netlaunch is a wonderful little program. It sits in your systray 
+  and makes every dial-up connection of your computer available at your fingertips. 
+  You can launch or close programs before, when or after you connected. You can 
+  schedule connections or interrupt them if they&acute;re too slow. All this for 
+  a couple of KB of memory. It&acute;s freely available at <a href="http://www.blackcastlesoft.com">Blackcastle 
+  Software</a> and, well, Iconnect works neatly with it :-) <b>highly recommended</b> 
+  due to several err...irregularities in wininet.dll, which Iconnect would normally 
+  use.</font></font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>Netlaunch=(Program Path) </b>&quot;C:\Programme\NetLaunch&quot; 
+  is an example path pointing to your Netlaunch folder. Since Netlaunch can be 
+  &quot;installed&quot; like Iconnect, i.e. by simply extracting it into a program 
+  folder, it leaves no &quot;trace&quot; in your registry. This in turn means, 
+  if you want Iconnet to use it, you&acute;ll have to enter the path here. <b>Note:</b> 
+  if <b>UseNetlaunch=1</b> and there is no path specified, Iconnect <i>must</i> 
+  be in the same folder as Netlaunch. Makes sense, btw.</font></p>
+<p><b><font face="Arial, Helvetica, sans-serif">Server=<b>(Program Path)</b> </font></b><font face="Arial, Helvetica, sans-serif">&quot;D:\Internet\Vnc\WinVNC.exe&quot; 
+  is an example for an application to load after Iconnect has done it&acute;s 
+  duty. This can be a *.bat file, vbscript, windows PWS (personal webserver) or 
+  whatever you can think of (as long as the file specified here actually exists!).</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>Localport=0...65535 </b>: port 
+  you want to connect to. Iconnect will create a default webpage where your computer 
+  is linked like this: <font face="Courier New, Courier, mono">&lt;a href=&quot;http:127.0.0.1&quot;&gt;127.0.0.1&lt;/a&gt;</font>. 
+  Specifying a &quot;Localport=123&quot; has the following effect: <font face="Courier New, Courier, mono">&lt;a 
+  href=&quot;http:127.0.0.1:123&quot;&gt;127.0.0.1&lt;/a&gt;<font face="Arial, Helvetica, sans-serif">. 
+  Makes it easier to &quot;click and connect&quot;. 5800, as in the example, is 
+  btw. the default port WinVNC listens to.</font></font></font></p>
+<p><b><font face="Arial, Helvetica, sans-serif">ScreenRes<a name="ScreenRes"></a>=(width,height,bits 
+  per pixel) </font></b><font face="Arial, Helvetica, sans-serif">: if you try 
+  to connect with, say 1600*1200 Pixel in 32-Bit true-color, even the best connection 
+  will be too slow to actually work smoothly with your computer. Worse, some remote-admin 
+  tools (like IBM Desktop-On-Call 2.0, for instance) might crash straight away 
+  if you bother them with more than 800*600. For a modem connection, a setting 
+  like ScreenRes=800,600,16 gives good results - especially in connection with 
+  Optimize=1. If all you want to do is to start your webserver, you can ommit 
+  this option and thus use your normal screen setting. <b>Note:</b> Iconnect actually 
+  <i>will </i>reduce your color-depth (bits per pixel) without rebooting. As a 
+  result,<i> this will screw up your desktop colors</i>. Might look alarming (or 
+  quite artistic if you go from, say, 1024,768,32 to 640,480,8) but is completely 
+  harmless. In any case, your default screen settings will be restored before 
+  the program quits.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="+1"><b><a name="Connection"></a></b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="+1"><b>[Connection]</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>ISP=(Service Provider)</b> : useful 
+  only in connection with <a href="#Netlaunch">Netlaunch</a>. You can specifiy 
+  your internet provider here as it appears in the Netlaunch menu (or rather, 
+  like in your dial up connection window). In this case, you do not have to specifiy 
+  any default provider as described in the <a href="#quickstart">quickstart</a>-section.</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>FTPHostname=(Name) </b>: name 
+  of the ftp-server you want to upload your IP-address to. <b>Note:</b> there&acute;s 
+  no leading ftp:// before the name.</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>FTPUsername=(Name) </b>: login 
+  name for that server.</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>FTPPassword=(Name)</b> : password 
+  for your account, please.</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>FTPTimeout=(Time)</b> : default 
+  0:2:0 (2 minutes). After connecting to the internet, Iconnect tries to contact 
+  FTPHostname. It actually needs to establish 2 connections to this server: one 
+  for sending and receiving data, and one for bossing it around. This should usually 
+  work within a few seconds. If it takes more than 2 minutes for instance (FTPTimeout 
+  default), it&acute;s definately better to stop trying.</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>RemoteFile=(Name)</b> : file you 
+  want to upload to the server. If a file with the same name <i>does not</i> <i>exist</i> 
+  in your Iconnect folder, Iconnect will &quot;upload&quot; date, time and current 
+  ip in an HTML-&quot;file&quot; that gets created only on the server. It&acute;ll 
+  look like this:</font></p>
+<p><img src="html01.gif" width="304" height="81"></p>
+<p><font face="Arial, Helvetica, sans-serif">There is, however, a file called 
+  &quot;template.htm&quot; in your Iconnect folder. It consists of the key-words 
+  &quot;local date:&quot;, &quot;local time:&quot;, &quot;current ip&quot; and 
+  a simple HTML-table. If the Name after &quot;RemoteFile=&quot; matches a file 
+  in this folder, it will be uploaded to the server. Iconnect will <i>insert</i> 
+  the correct date, time and IP after the appropriate &quot;key-words&quot; and 
+  in addition fill up the table top to bottom with the data of your recent connections. 
+  Thus, you can use Iconnect to display the most recent connections (or phonecalls) 
+  to your computer. Since it will only do that if the table is empty, the actual 
+  HTML-file can be as sophisticated as you want. The table can have as many (empty) 
+  entries as you need, though once it is full you will have to empty it manually 
+  since Iconnect will not overwrite any cells that are already filled. In short: 
+  you can customize the HTML-page you actually upload to your hearts content; 
+  if any of the key-words are missing, the corresponding data will not be published. 
+  Feel free to experiment.</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>MaxRetries=(Number) </b>: number 
+  of times Iconnect will try to persuade the ftp-server to cooperate <i>after</i> 
+  the actual connection to it has been established. In other words, the whole 
+  connection business can be summarized as: try to get <i>any</i> response from 
+  the server until FTPTimeout. If you didn&acute;t, quit. If you did, try to login 
+  and establish a data connection. If that fails, retry the whole thing &quot;MaxRetries&quot; 
+  times. Default is 5. If that didn&acute;t work, quit.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="+1"><b><a name="timer"></a></b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="+1"><b>[Timer]</b></font></p>
+<p><b><font face="Arial, Helvetica, sans-serif">Interval=(Number) </font></b><font face="Arial, Helvetica, sans-serif">: 
+  Iconnect uses the standard timer event in Windows. You can specifiy here, how 
+  often this will occur. Interval is in ms. The shorter the interval (the lower 
+  the number), the more accurate the timing of Iconnect gets. Of course, that 
+  means more system resources as well. The default (300) actually works so well 
+  that I am beginning to wonder why I left the option to change it in there. Well...</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>Timer1=(Time)</b> : Countdown 
+  <i>before</i> dial up. Default 5 seconds. If you put a link to Iconnect into 
+  your &quot;Autostart&quot;-folder of your start menu, you propably don&acute;t 
+  want to really go online every time you boot up your computer while your modem 
+  is on. If your modem is off, nothing will happen anyway. But if you&acute;re 
+  like me, you propably power on your computer using any odd switch: be it the 
+  modem, the space-bar...just don&acute;t forget to hit &quot;enter&quot; if you 
+  see Iconnect appearing on your screen. Especially if AutoShutdown is turned 
+  ON. I suggest setting it to a minute or so.</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>Timer2=(Time)</b> : Countdown 
+  <i>after</i> Iconnect has uploaded your HTML-&quot;page&quot;. Default 5 minutes. 
+  If you know how long it takes for your computer to boot (say, 1 minute 30 seconds) 
+  and for the upload to be finished (max. 30 seconds) this gives you a &quot;time-window&quot; 
+  of 2 to 7 minutes to connect to your computer until you see your desktop and 
+  press &quot;enter&quot;. Iconnect will hop diligently into your taskbar and 
+  sit there until 10 seconds before the countdown is over. If you get phonecalls 
+  very often, but actually connect your computer very rarely, reducing this time 
+  might be a good idea. Your phone bill will thank you.</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>Timer3=(Time)</b> : Countdown 
+  after the first reset of the &quot;stopwatch&quot;. Default 10 minutes. Every 
+  10 minutes, Iconnect will pop up again, 10 seconds before the countdown expires, 
+  and ask for you to hit &quot;enter&quot; again. In case for whatever reason 
+  that doesn&acute;t happen, you&acute;ll be propably grateful to know your computer 
+  won&acute;t stay online.</font></p>
+<p>&nbsp;</p>
+</body>
+</html>
